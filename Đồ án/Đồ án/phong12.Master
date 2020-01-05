@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="phong12.master.cs" Inherits="Đồ_án.phong12" %>
+
+<%@ Register Src="~/UC/ucfooter.ascx" TagPrefix="uc1" TagName="ucfooter" %>
+<%@ Register Src="~/UC/ucheader.ascx" TagPrefix="uc1" TagName="ucheader" %>
+<%@ Register Src="~/UC/ucleft.ascx" TagPrefix="uc1" TagName="ucleft" %>
+<%@ Register Src="~/UC/ucright.ascx" TagPrefix="uc1" TagName="ucright" %>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="icon" type="image/ico" href="images/icon1.png" />
+    <title>WEB GIÀY BÓNG ĐÁ SPORT</title>
+    <link href="Style.css" rel="stylesheet" />
+    <style type="text/css">
+        body{
+                background-image:url("../images/99.jpg");
+
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+       
+  <uc1:ucheader runat="server" ID="ucheader" />
+        
+        <asp:PlaceHolder ID="PlaceHolder2" runat="server">
+
+    </asp:PlaceHolder>
+<div id="body">
+    
+    <asp:ContentPlaceHolder ID="slider" runat="server">
+   
+    </asp:ContentPlaceHolder>
+          <article>
+              <uc1:ucleft runat="server" ID="ucleft" />
+         
+            <section>
+                  <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                  </asp:ContentPlaceHolder>   
+            </section>
+             
+              <uc1:ucright runat="server" id="ucright" />
+           
+        </article>
+      </div>
+     
+        
+        <uc1:ucfooter runat="server" ID="ucfooter" />
+	
+    </form>
+</body>
+</html>

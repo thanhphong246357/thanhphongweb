@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="Đồ_án.admin" %>
+
+<%@ Register Src="~/UC/ucadminheader.ascx" TagPrefix="uc1" TagName="ucadminheader" %>
+<%@ Register Src="~/UC/ucadminleft.ascx" TagPrefix="uc1" TagName="ucadminleft" %>
+<%@ Register Src="~/UC/ucfooter.ascx" TagPrefix="uc1" TagName="ucfooter" %>
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="icon" type="image/ico" href="images/icon1.png" />
+    <title>WEB GIÀY BÓNG ĐÁ SPORT</title>
+    <link href="Style.css" rel="stylesheet" />
+
+    <SCRIPT>
+        expireDate = new Date
+        expireDate.setMonth(expireDate.getMonth() + 6)
+        jcount = eval(cookieVal("jaafarCounter"))
+        jcount++
+        document.cookie = "jaafarCounter=" + jcount + ";expires=" + expireDate.toGMTString()
+
+        function cookieVal(cookieName) {
+            thisCookie = document.cookie.split("; ")
+            for (i = 0; i < thisCookie.length; i++) {
+                if (cookieName == thisCookie[i].split("=")[0]) {
+                    return thisCookie[i].split("=")[1]
+                }
+            }
+            return 0
+        }
+
+        function page_counter() {
+            for (i = 0; i < (7 - jcount.toString().length) ; i++)
+                document.write('<span class="counter">0</span>')
+            for (y = 0; y < (jcount.toString().length) ; y++)
+                document.write('<span class="counter">' + jcount.toString().charAt(y) + '</span>')
+        }
+
+</SCRIPT>
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+        <uc1:ucadminheader runat="server" id="ucadminheader" />
+    <div id="body">
+        <article>
+            <uc1:ucadminleft runat="server" id="ucadminleft" />
+            <section>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </section>
+        </article>
+
+       
+    </div>
+        <uc1:ucfooter runat="server" id="ucfooter" />
+    </form>
+</body>
+</html>

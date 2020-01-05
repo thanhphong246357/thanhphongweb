@@ -1,0 +1,6 @@
+c:\users\pc\documents\visual studio 2013\Projects\Đồ án\Đồ án\bin\Đồ án.dll.config
+c:\users\pc\documents\visual studio 2013\Projects\Đồ án\Đồ án\bin\Đồ án.dll
+c:\users\pc\documents\visual studio 2013\Projects\Đồ án\Đồ án\bin\Đồ án.pdb
+c:\users\pc\documents\visual studio 2013\Projects\Đồ án\Đồ án\obj\Debug\Đồ án.csprojResolveAssemblyReference.cache
+c:\users\pc\documents\visual studio 2013\Projects\Đồ án\Đồ án\obj\Debug\Đồ án.dll
+c:\users\pc\documents\visual studio 2013\Projects\Đồ án\Đồ án\obj\Debug\Đồ án.pdb
